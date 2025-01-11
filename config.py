@@ -23,7 +23,7 @@ API_HASH = environ.get("API_HASH", "5bcc6d5a90ad19da0989d635a36942af")
 BOT_TOKEN = environ.get("BOT_TOKEN", "7722253146:AAELB_EkSURWoB3BM1_78SdRQ19FWMUrL6U")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1481322134').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "BJFileShareBot") # without @
 PORT = environ.get("PORT", "8080")
 
