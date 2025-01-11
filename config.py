@@ -18,17 +18,17 @@ def is_enabled(value, default):
         return default
       
 # Bot Information
-API_ID = int(environ.get("API_ID", ""))
-API_HASH = environ.get("API_HASH", "")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+API_ID = int(environ.get("API_ID", "24870301"))
+API_HASH = environ.get("API_HASH", "5bcc6d5a90ad19da0989d635a36942af")
+BOT_TOKEN = environ.get("BOT_TOKEN", "7722253146:AAELB_EkSURWoB3BM1_78SdRQ19FWMUrL6U")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "") # without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "BJFileShareBot") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
-CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
+CLONE_MODE = bool(environ.get('CLONE_MODE', True)) # Set True or False
 
 # If Clone Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
